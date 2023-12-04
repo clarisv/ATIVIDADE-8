@@ -16,10 +16,10 @@ int main() {
         printf("digite o sexo (m/f) da pessoa %d: ", i + 1);
         scanf(" %c", &sexo);
 
-        // Verificar se o sexo é válido
+        /*verificando sexo*/
         if (!(sexo == 'm' || sexo == 'f')) {
             printf("opção inválida para sexo. tente novamente.\n");
-            i--;  // Para repetir a entrada
+            i--; 
             continue;
         }
 
@@ -43,7 +43,7 @@ int main() {
         pesoTotal += peso;
     }
 
-    /*calculando médias */
+    /*calculando médias*/
     float mediaAlturaHomens = numHomens > 0 ? alturaHomens / numHomens : 0;
     float mediaAlturaMulheres = numMulheres > 0 ? alturaMulheres / numMulheres : 0;
     float mediaAlturaTotal = numHomens + numMulheres > 0 ? alturaTotal / (numHomens + numMulheres) : 0;
